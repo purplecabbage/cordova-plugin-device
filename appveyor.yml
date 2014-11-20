@@ -4,7 +4,7 @@
 nodejs_version: 0.10
 
 install:
-  - npm install purplecabbage/cordova-paramedic
+  - npm install -g purplecabbage/cordova-paramedic
 
 build: off
 
@@ -12,3 +12,5 @@ test_script:
   - node --version
   - npm --version
   - msbuild /version
+
+  - cordova-paramedic --plugin C:\projects\cordova-plugin-device --platform windows  
