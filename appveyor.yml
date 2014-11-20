@@ -14,4 +14,4 @@ test_script:
   - npm --version
   - msbuild /version 
   - cordova --version
-  - cordova-paramedic --plugin C:\projects\cordova-plugin-device --platform windows  
+  - cordova-paramedic --plugin C:\projects\cordova-plugin-device --platform wp8  
