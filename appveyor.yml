@@ -5,6 +5,7 @@ nodejs_version: 0.10
 
 install:
   - npm install -g purplecabbage/cordova-paramedic
+  - npm install -g cordova
 
 build: off
 
