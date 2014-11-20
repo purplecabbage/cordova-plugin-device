@@ -12,6 +12,6 @@ build: off
 test_script:
   - node --version
   - npm --version
-  - msbuild /version
-
+  - msbuild /version 
+  - cordova --version
   - cordova-paramedic --plugin C:\projects\cordova-plugin-device --platform windows  
