@@ -4,6 +4,7 @@
 nodejs_version: 0.10
 
 install:
+  - netsh advfirewall firewall add rule name="Open Port 8008" dir=in action=allow protocol=TCP localport=8008
   - npm install -g purplecabbage/cordova-paramedic
   - npm install -g cordova
 
