@@ -1,16 +1,16 @@
-language: objective-c
+language: android
 git:
   depth: 2
 node_js:
   - "0.10"
 install:
-  - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config 
   - cd ..
+  - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config 
   - npm install -g purplecabbage/cordova-paramedic
   - npm install -g cordova
-  - npm install -g ios-sim
+
 script:
-  - cordova-paramedic --platform ios --plugin ../cordova-plugin-device
+  - cordova-paramedic --platform android --plugin ../cordova-plugin-device
 
 
 
