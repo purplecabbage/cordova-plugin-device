@@ -8,6 +8,7 @@ install:
   - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config 
   - npm install -g purplecabbage/cordova-paramedic
   - npm install -g cordova
+  - android list targets
 
 script:
   - cordova-paramedic --platform android --plugin ../cordova-plugin-device
