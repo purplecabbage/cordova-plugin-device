@@ -26,12 +26,17 @@ git:
   depth: 2
 node_js:
   - "0.10"
+
 install:
   - cd ..
   - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config 
   - npm install -g purplecabbage/cordova-paramedic
   - npm install -g cordova
-  # - echo 'no' | android create avd -n MyAndroid -t 8
+
+
+before_script:
+  - echo no | android create avd --force -n test -t android-19 --abi armeabi-v7a
+  - emulator -avd test -no-skin -no-audio -no-window &
 
 script:
   - cordova-paramedic --platform android --plugin ../cordova-plugin-device
