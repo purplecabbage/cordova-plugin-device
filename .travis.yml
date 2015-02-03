@@ -8,8 +8,7 @@ install:
   - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config 
   - npm install -g purplecabbage/cordova-paramedic
   - npm install -g cordova
-  - sudo apt-get install xorg-dev
-  - echo 'no' | android create avd -n MyAndroid -t 6
+  - echo 'no' | android create avd -n MyAndroid -t 8
 
 script:
   - cordova-paramedic --platform android --plugin ../cordova-plugin-device
